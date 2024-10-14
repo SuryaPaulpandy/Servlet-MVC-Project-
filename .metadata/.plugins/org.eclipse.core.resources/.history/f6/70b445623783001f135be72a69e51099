@@ -1,0 +1,56 @@
+package Practice_Jdnbc;
+
+import java.sql.DriverManager;
+import java.util.Scanner;
+
+public class Practice1 {
+
+	public static void main(String[] args) throws Exception {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("1.Book Ticked");
+		System.out.println("2.Cancel Ticked");
+		
+		System.out.println("Enter your choice");
+		int choice = sc.nextInt();
+		switch(choice) {
+		case 1: BookingTicked();
+		break;
+		case 2: CancelTicked();
+		break;
+		default : System.out.println("Invalid Choice");
+		break;
+		}
+		
+	}
+	static void BookingTicked() throws Exception {
+		DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a Passenger Name:");
+		String Pname = sc.next();
+		System.out.println("Enter a Username: ");
+		String Uname = sc.next();
+		System.out.println("Enter a Age: ");
+		int Age = sc.nextInt();
+		System.out.println("Enter a gender: ");
+		String Gender = sc.next();
+		System.out.println("Enter a Mobile Number: ");
+		long Mnumber = sc.nextLong(); 
+		System.out.println("Enter a Booking Date: ");
+		String Bdate = sc.next();
+		System.out.println("Enter a Pickup Point: ");
+		String Ppoint = sc.next();
+		System.out.println("Enter a Drop Point: ");
+		String Dpoint = sc.next();
+		System.out.println("Enter a Seat Number:");
+		int Seat = sc.nextInt();
+		
+		
+		
+	}
+	static void CancelTicked() throws Exception {
+		
+	}
+
+}

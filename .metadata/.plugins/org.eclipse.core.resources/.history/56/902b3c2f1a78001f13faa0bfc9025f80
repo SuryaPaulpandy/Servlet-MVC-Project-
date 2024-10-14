@@ -1,0 +1,46 @@
+package demo;
+import java.util.*;
+
+class Amstrong{
+	boolean isAmstrong(int n) {
+		int r, sum=0, m=n;
+		int d=0;
+		while(n!=0) {
+			d++;
+			n=n/10;
+		}
+		n=m;
+		
+		while(n!=0) {
+			r=n%10;
+			sum+=Math.pow(r, d);
+		}
+		if(sum==m) {
+			return true;
+		} else {
+			return false;
+		}
+			
+		}
+		
+		
+	}
+	
+
+
+public class Demo1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int start, end, i;
+		System.out.println("Enter the start value: ");
+		start=sc.nextInt();
+		System.out.println("Enter the End value:");
+		end=sc.nextInt();
+		Amstrong a = new Amstrong();
+		for(i=start; i<end; i++) {
+			if(a.isAmstrong(i)) {
+				System.out.println(i);
+			}
+		}
+	}
+}

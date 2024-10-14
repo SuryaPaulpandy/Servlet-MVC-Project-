@@ -1,0 +1,17 @@
+package demo;
+import java.util.*;
+
+class Mohan{
+	static void add() {
+		int a;
+		System.out.println(a);
+		
+	}
+}
+
+public class Demo1 {
+	public static void main(String[] args) {
+		Mohan.add();
+		
+	}
+}

@@ -1,0 +1,15 @@
+package demo;
+import java.util.*;
+
+class Mohan{
+		int a;
+	}
+	
+class Demo1 {
+	public static void main(String[] args) {
+		Mohan m = new Mohan();
+		System.out.println(m.a);
+		
+		
+	}
+}

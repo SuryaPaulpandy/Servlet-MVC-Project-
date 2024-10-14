@@ -1,0 +1,38 @@
+package com.qn.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.qn.model.RegisterPage;
+
+
+class Register extends HttpServlet {
+	
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		String FirstName = request.getParameter("FirstName");
+		String LastName = request.getParameter("LastName");
+		String Email = request.getParameter("Marks1");
+		String Password = request.getParameter("Marks2");
+		String ConformPassword = request.getParameter("Marks2");
+		RegisterPage tempstudent = new RegisterPage();
+		tempstudent.setFirstName(FirstName);
+		tempstudent.setLastName(LastName);
+		tempstudent.setEmail(Email);
+		tempstudent.setPassword(Password);
+		tempstudent.setConformPassword(ConformPassword);
+		int rows = tempstudent.addResult();
+		if(rows==1) {
+			response.sendRedirect("/AddResult-mvc/AddResultSuccess.html");
+		}
+		else {
+			response.sendRedirect("/AddResult-mvc/AddResultFailure.html");
+		}
+	}	
+
+}

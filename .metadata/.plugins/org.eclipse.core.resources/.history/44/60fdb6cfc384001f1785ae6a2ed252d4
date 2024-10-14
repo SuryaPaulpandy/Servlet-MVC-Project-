@@ -1,0 +1,13 @@
+package Jdbc;
+
+public class StringSpace {
+
+	public static void main(String[] args) {
+		StringBuffer s = new StringBuffer("mohan ");
+		s.append("S");
+	
+		System.out.println(s);
+  
+	}
+
+}

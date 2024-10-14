@@ -1,0 +1,14 @@
+package Practice_Jdnbc;
+
+import java.util.Scanner;
+
+public class RuntimeError {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);;
+		System.out.println("Enter String");
+		int s1 = sc.nextInt();
+		System.out.println(s1);
+	}
+
+}

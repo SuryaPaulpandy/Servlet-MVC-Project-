@@ -1,0 +1,19 @@
+package demo;
+import java.util.*;
+
+class Mohan{
+	Mohan(int b){
+		int a;
+		System.out.println(b);
+	}
+		
+	}
+	
+class Demo1 {
+	public static void main(String[] args) {
+		Mohan m = new Mohan(10);
+		
+		
+		
+	}
+}

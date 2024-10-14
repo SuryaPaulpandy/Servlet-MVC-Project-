@@ -1,0 +1,19 @@
+package demo;
+import java.util.*;
+
+class Mohan{
+	 void add() {
+		int a;
+	
+		
+	}
+}
+
+public class Demo1 {
+	public static void main(String[] args) {
+		Mohan m = new Mohan();
+		m.add();
+		
+		
+	}
+}

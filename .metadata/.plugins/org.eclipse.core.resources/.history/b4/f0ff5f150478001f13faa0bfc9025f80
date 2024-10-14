@@ -1,0 +1,30 @@
+package demo;
+import java.util.*;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the String");
+    String s1=sc.nextLine();
+    int count=0, asc, index;
+    int a[] = new int[26];
+    
+    for(char x : s1.toLowerCase().toCharArray()) {
+    	asc=(int)x;
+    	if(asc>=97 && asc<=122) {
+    		index = asc-97;
+    		a[index]++;
+    		System.out.println(a[0]);
+    		if(a[index]==1) count++;
+    	}
+    }
+    
+    if(count==26) {
+    	System.out.println("Panagram");
+    } else {
+    	System.out.println("Not a Panagram");
+    }
+    
+	}
+	}

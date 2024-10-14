@@ -1,0 +1,9 @@
+127.0.0.1 - - [11/Oct/2024:20:21:34 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:20:21:35 +0530] "GET /AddResult-mvc/ HTTP/1.1" 200 728
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:20:21:35 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:20:22:03 +0530] "GET /AddResult-mvc/AddResult?id=7&name=Daas&Marks1=90&Marks2=78&Marks3=84 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:20:22:03 +0530] "GET /AddResult-mvc/AddResultSuccess.html HTTP/1.1" 200 168
+127.0.0.1 - - [11/Oct/2024:20:40:17 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:20:40:18 +0530] "GET /AddResult/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:20:40:18 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:20:40:32 +0530] "GET /AddResult/AddResult?id=7&name=Daas&Marks1=90&Marks2=78&Marks3=84 HTTP/1.1" 200 23

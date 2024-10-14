@@ -1,0 +1,26 @@
+package demo;
+import java.util.*;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the String");
+    String s1=sc.nextLine();
+    String s2=" ";
+    
+    for(char x:s1.toCharArray()) {
+    	if(x==' ') {
+    		System.out.println(s2);
+    		s2=" ";
+    		
+    		
+    	}else {
+    		System.out.println(s2);
+    		
+    	}
+    	
+    }	
+    
+	}
+	}
